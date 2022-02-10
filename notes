@@ -1,0 +1,5 @@
+What is iframe in JavaScript?
+An IFrame (Inline Frame) is an HTML document embedded inside another HTML document on a website. ... This capacity is enabled through JavaScript or the target attribute of an HTML anchor.
+A Web designer can change an IFrame's content without requiring the user to reload the surrounding page. This capacity is enabled through JavaScript or the target attribute of an HTML anchor.
+...............................
+
