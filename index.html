@@ -9,6 +9,21 @@
     
     var promise = element.requestFullscreen(options);
 
+    var elem = document.getElementById("inlineFrameExample");
+     if (elem.requestFullscreen) {
+  elem.requestFullscreen();
+}
+
+    function toggleFullScreen() {
+     if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+
 
 </script>
 
@@ -18,6 +33,7 @@
     height="100%"
     allow="fullscreen"
     src="https://asdf1234123.ddns.net/">
+    
 </iframe>
 
 
