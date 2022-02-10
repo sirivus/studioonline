@@ -24,6 +24,17 @@ var windowFeatures = "popup";
 function openRequestedPopup() {
   windowObjectReference = window.open("http://www.cnn.com/", "CNN_WindowName", windowFeatures);
 }
+		
+		var windowObjectReference;
+
+function openRequestedPopup() {
+  windowObjectReference = window.open(
+    "http://www.domainname.ext/path/ImageFile.png",
+    "DescriptiveWindowName",
+    "left=100,top=100,width=320,height=320"
+  );
+}
+
 
 
 
