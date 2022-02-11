@@ -1,7 +1,24 @@
-height.onClick
+console.log('hi');
+height.onClick;
+
+//code type step building action step
+//implement features
+//document them
+////
+//1. resizeable iframe
+//7. code hiding secure
+//8. payment secure
+//2. pause iframe when in background
+//3. miniplayer iframe for multitasking
+//4. online continuity persistance
+//5. open world engine
+//6. open world game
+////
+//&&&&&&
 
 var mainframe = document.getElementById('mainframe')
     requestFullscreen(this)
+    console.log(this)
 
     const heightOutput = document.querySelector('#height');
     const widthOutput = document.querySelector('#width');
@@ -53,3 +70,5 @@ myLink.addEventListener('click',function(evt){
  evt.preventDefault();
 }
  */
+
+window.addEventListener('resize', reportWindowSize);

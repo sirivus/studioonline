@@ -19,9 +19,8 @@
 <script src="game-engine.js"></script>
 -->
 <!--html-->
-<p>Resize the browser window to fire the <code>resize</code> event.</p>
-<p>Window height: <span id="height"></span></p>
-<p>Window width: <span id="width"></span></p>
+
+@media (min-width: 30em) and (orientation: landscape) { ... }
 
 <iframe id="mainframe"
   title="mainscreen"
@@ -32,6 +31,7 @@
 </iframe>
 
 <script>
+
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.9, 1000 );
 
@@ -57,17 +57,6 @@
 
   animate();
 </script>
-
-<p>Resize the browser window to fire the <code>resize</code> event.</p>
-<p>Window height: <span id="height"></span></p>
-<p>Window width: <span id="width"></span></p>
-
-const heightOutput = document.querySelector('#height');
-const widthOutput = document.querySelector('#width');
-
-function reportWindowSize() {
-  heightOutput.textContent = window.innerHeight;
-  widthOutput.textContent = window.innerWidth;
-}
-
-window.onresize = reportWindowSize;
+<script>
+window.addEventListener('resize', reportWindowSize);
+</script>
