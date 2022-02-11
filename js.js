@@ -13,6 +13,8 @@ height.onClick;
 //4. online continuity persistance
 //5. open world engine
 //6. open world game
+//7. refind folder paths on launch if error
+//8. import editor in base
 ////
 //&&&&&&
 
