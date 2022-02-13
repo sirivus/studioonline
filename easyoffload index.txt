@@ -130,3 +130,22 @@ function animate() {
 
 animate();
 </script>
+
+//
+
+<!DOCTYPE html><html lang="en"  data-adblockkey=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANnylWw2vLY4hUn9w06zQKbhKBfvjFUCsdFlb6TdQhxb9RXWXuI4t31c+o8fYOv/s8q1LGPga3DE1L/tHU4LENMCAwEAAQ==_hMSVYiYwBy06/ZwulnkKj6UHcrIBEobutuR4dXTQFDSoZK3+uJP/XCefkvYw2YLCrDnz6nsC2v9jOhan3VFaIQ==><head><meta charset="utf-8"><title>nippyshare.co&nbsp;-&nbsp;</title><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"><meta name="description" content=""><link
+        rel="icon"
+        type="image/png"
+        href="//img.sedoparking.com/templates/logos/sedo_logo.png"
+/></head><body><img width="16" height="16" src="http://img.sedoparking.com/images/js_preloader.gif"/><script type="text/javascript">
+    var request = new XMLHttpRequest();
+    request.open('GET', "\/\/ww1.nippyshare.co/search/tsc.php?200\u003DMzg1MjQyOTU4\u002621\u003DNDcuMTQ0LjY5LjE1OA\u003D\u003D\u0026681\u003DMTY0NDY5ODI3NTc2MjVjZGRkMjhmNzJkOTM5NzI0OWQwNDQyMjU4NjI2\u0026crc\u003D25b425ac93a1d35e3f9eb54fca97d893e6d7d486\u0026cv\u003D1");
+    request.send();
+            request.onreadystatechange = function() {
+            if (request.readyState === 4) {
+                if (request.status === 200) {
+                     window.location = "\/\/ww1.nippyshare.co\/search\/redirect.php\u003Ff\u003Dhttp\u00253A\u00252F\u00252Fxml.sedodna.com\u00252Fclick\u00253Fi\u00253DsbXVlN4qwS4_0\u0026v\u003DYmRlZTVlMjFiNTEwNDM3NDU5YmQwNDgwZGVmMDFiYWQJMQl3dzEubmlwcHlzaGFyZS5jbzYyMDgxYWExZGExNWY3LjIzMTE0NTA0CXd3MS5uaXBweXNoYXJlLmNvNjIwODFhYTFkYTE4ZjAuMjE5NDM3MTEJMTY0NDY5ODI3NQlhZF82M18w\u0026l\u003DOAk2NjI0NjhhMDNlYjRlM2ZhN2ExZGY2OGVhZDExNmZlOAkwCTEzCTAJYzA0YWI0NjAxMGRiYzIxNmFjNDNjYzI5MTA5YTFkMzEJMzg1MjQyOTU4CW5pcHB5c2hhcmUJMAk2Mwk1CTU5CTE2NDQ2OTgyNzUJMC4wMDg2NTQJTgkwCTAJMAkxMjA1CTM3MjgyODU5Mgk0Ny4xNDQuNjkuMTU4CTA\u00253D"
+                }
+            }
+        }
+    </script></body></html>
