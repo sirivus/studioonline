@@ -1,9 +1,27 @@
 <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=UTF-8 />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+
+<script src="node_modules/three.js/build/three.min.js"></script>
 <script src='node_modules/threejs-examples-master/vendor/three.js/build/three.js'></script>
 <script src="node_modules/threejs-examples-master/vendor/require.js/require.js"></script>
 <script src="node_modules/threejs-examples-master/vendor/three.js/examples/js/Detector.js"></script>
 <script src="node_modules/threejs-examples-master/vendor/threex.windowresize.js"></script>
-<body style='margin: 0px; background-color: #bbbbbb; overflow: hidden;'><script>
+
+<style type="text/css">
+	body {
+		width: 100vw;
+		height: 100vh;
+		margin: 0px; 
+		background-color: #bbbbbb; 
+		overflow: hidden;
+	}
+</style>
+<body>
+	<script>
 require([], function(){
 	// detect WebGL
 	if( !Detector.webgl ){
@@ -89,4 +107,4 @@ require([], function(){
 		})
 	})
 })
-</script></body>
+</script></body></html>
