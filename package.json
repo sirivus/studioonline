@@ -1,0 +1,30 @@
+{
+  "name": "studioonline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirivus/studioonline.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirivus/studioonline/issues"
+  },
+  "homepage": "https://github.com/sirivus/studioonline#readme",
+  "dependencies": {
+    "babylon": "^6.18.0",
+    "glsl": "^0.0.1",
+    "htmleditor": "^0.0.0",
+    "javascript": "^1.0.0",
+    "make": "^0.0.0",
+    "sandbox": "^0.8.6",
+    "stats.js": "^0.17.0",
+    "three": "^0.137.5",
+    "three.js": "^0.77.0"
+  }
+}
