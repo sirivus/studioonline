@@ -1,4 +1,3 @@
-
 require([], function(){
 	// detect WebGL
 	if( !Detector.webgl ){
@@ -64,6 +63,7 @@ const texture = loader.load([
 ]);
 scene.background = texture;
 */ 
+
 	const plane = new THREE.Mesh(
 		new THREE.PlaneGeometry(100, 100, 10, 10),
 		new THREE.MeshStandardMaterial({
@@ -109,6 +109,25 @@ scene.background = texture;
 	}
 */
 
+/*
+    // const box = new THREE.Mesh(
+    //   new THREE.SphereGeometry(2, 32, 32),
+    //   new THREE.MeshStandardMaterial({
+    //       color: 0xFFFFFF,
+    //       wireframe: true,
+    //       wireframeLinewidth: 4,
+    //   }));
+    // box.position.set(0, 0, 0);
+    // box.castShadow = true;
+    // box.receiveShadow = true;
+    // this._scene.add(box);
+*/
+	
+/*
+	RAF(); 
+*/
+
+
 	// declare the rendering loop
 	var onRenderFcts= [];
 
@@ -116,7 +135,7 @@ scene.background = texture;
 	var winResize	= new THREEx.WindowResize(renderer, camera)
 
 	//////////////////////////////////////////////////////////////////////////////////
-	//		default 3 points lightning					//
+	//		default 3 points lightning				//
 	//////////////////////////////////////////////////////////////////////////////////
 	
 	var ambientLight= new THREE.AmbientLight( 0x020202 )
