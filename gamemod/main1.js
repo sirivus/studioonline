@@ -1,4 +1,4 @@
-console.log("hi");
+console.log("hi main1");
 /*
 <script src="node_modules/three.js/node_modules/three/three.js"></script>
 <script src='mydependants/threejs-examples-master/vendor/three.js/build/three.js'></script>
