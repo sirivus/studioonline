@@ -109,7 +109,7 @@ scene.background = texture;
 	}
 */
 
-/*
+
     // const box = new THREE.Mesh(
     //   new THREE.SphereGeometry(2, 32, 32),
     //   new THREE.MeshStandardMaterial({
@@ -121,12 +121,26 @@ scene.background = texture;
     // box.castShadow = true;
     // box.receiveShadow = true;
     // this._scene.add(box);
-*/
+
 	
 /*
 	RAF(); 
 */
 
+/*
+	_OnWindowResize() {
+    this._camera.aspect = window.innerWidth / window.innerHeight;
+    this._camera.updateProjectionMatrix();
+    this._threejs.setSize(window.innerWidth, window.innerHeight);
+	}
+
+	_RAF() {
+    	requestAnimationFrame(() => {
+    		this._threejs.render(this._scene, this._camera);
+    		this._RAF();
+		});
+	}
+*/
 
 	// declare the rendering loop
 	var onRenderFcts= [];
