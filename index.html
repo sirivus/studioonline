@@ -3,16 +3,16 @@
 	<!--CSS-->
 	<head>
 		<meta charset=UTF-8 />
-		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="stylesheet" type="text/css" href="gamemod/styles.css" />
 		<link rel="icon" type="image/x-icon" href="mydependants/favicon/aaaa.png">
 	</head>
 
 	<!--Modules-->
 	<script src="node_modules/three.js/node_modules/three/three.js"></script>
-	<script src='mydependants/threejs-examples-master/vendor/three.js/build/three.js'></script>
-	<script src="mydependants/threejs-examples-master/vendor/require.js/require.js"></script>
-	<script src="mydependants/threejs-examples-master/vendor/three.js/examples/js/Detector.js"></script>
-	<script src="mydependants/threejs-examples-master/vendor/threex.windowresize.js"></script>
+	<script src='mine/threejs-examples-master/vendor/three.js/build/three.js'></script>
+	<script src="mine/threejs-examples-master/vendor/require.js/require.js"></script>
+	<script src="mine/threejs-examples-master/vendor/three.js/examples/js/Detector.js"></script>
+	<script src="mine/threejs-examples-master/vendor/threex.windowresize.js"></script>
 
 	<!--Code-->
 	<body>
@@ -20,5 +20,15 @@
 		</script>
 		<script src="gamemod/main1.js" type="module">
 		</script>
+		<script>
+		const geometry = new THREE.PlaneGeometry( 1, 1);
+		const material = new THREE.MeshBasicMaterial({
+    	color: 0xffff00, side: THREE.DoubleSide
+		});
+		const plane = new THREE.Mesh( geometry, material);
+		scene.add(plane);
+
+		</script>
+		hiii
 	</body>
 </html>
