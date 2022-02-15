@@ -3,9 +3,10 @@ made from scratch 3d game world
 make a game engine
 */
 console.log('hi');
-import { BufferGeometry } from 'node_modules/three.js/node_modules/three/src/core/BufferGeometry.js';
+BufferGeometry
+import { BufferGeometry } from '/node_modules/three/src/core/BufferGeometry.js';
 
-import { Float32BufferAttribute } from 'node_modules/three.js/node_modules/three/src/core/BufferAttribute.js' ;
+import { Float32BufferAttribute } from '/node_modules/three/src/core/BufferAttribute.js' ;
 class PlaneGeometry extends BufferGeometry {
 
 	constructor( width = 1, height = 1, widthSegments = 1, heightSegments = 1 ) {
