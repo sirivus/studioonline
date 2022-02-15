@@ -18,6 +18,7 @@
   "homepage": "https://github.com/sirivus/studioonline#readme",
   "dependencies": {
     "babylon": "^6.18.0",
+    "commonjs": "^0.0.1",
     "glsl": "^0.0.1",
     "htmleditor": "^0.0.0",
     "javascript": "^1.0.0",
