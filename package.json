@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sirivus/studioonline#readme",
   "dependencies": {
+    "@react-three/fiber": "^7.0.26",
     "babylon": "^6.18.0",
     "commonjs": "^0.0.1",
     "express": "^4.17.2",

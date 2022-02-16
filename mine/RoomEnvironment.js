@@ -10,7 +10,7 @@ import {
  	MeshStandardMaterial,
  	PointLight,
  	Scene,
-} from '/node_modules/three';
+} from /*'three'*/'blob:https://threejs.org/0f10f8ad-c2bf-4bb8-a474-d7ccc5299e49';
 
 class RoomEnvironment extends Scene {
 
@@ -119,3 +119,5 @@ function createAreaLightMaterial( intensity ) {
 }
 
 export { RoomEnvironment };
+
+//# sourceURL=https://threejs.org/examples/jsm/environments/RoomEnvironment.js

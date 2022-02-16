@@ -3,7 +3,7 @@ import {
 	BufferGeometry,
 	FileLoader,
 	Loader
-} from 'three';
+} from '/gamemod/sample2/three.module.js';
 node_modules/three/examples/jsm/loaders/DRACOLoader.js
 node_modules/three
 
