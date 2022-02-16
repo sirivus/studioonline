@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		
+		<!--meta http-equiv="Content-type" content="text/html; charset=UTF-8"-->
+
+		<!--META HTTP-EQUIV="Cache-Control" CONTENT="private, max-age=5400, pre-check=5400"-->
+
+		<meta name="description" content="No Download Required! Conquer ancient times in our Free To Play 3D Browser MMORPG. With countless realms and temples with hundreds of quests to complete and items to find, you will never be bored again.">
+
+		<!--meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"-->
+		
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+		<meta name="google-signin-client_id" content="562040259844-k71h8ic9qei3d3ersgpa3m7peq6i14g4.apps.googleusercontent.com">
+
+		<link rel="manifest" href="/manifest.json">
+
+		<title>3D Browser MMORPG - Titans of Time</title>
+
+		<script src="/js/jquery-3.5.1.js"></script>
+		<script src="/js/jquery-ui.min.js"></script>
+		<script src="https://apis.google.com/js/platform.js"></script>
+		<script src="/js/Tween.js"></script>
+		<script src="/js/gamem.min.js"></script>
+		<script src="/js/microcache.js"></script>
+		<script src="/js/hammer.js"></script>
+		<!--script src="/js/nipple.min.js"></script-->
+
+		<script src="/webgl/Detector.js"></script>
+		<script src="/webgl/WEBGL.js"></script>
+		<script src="/webgl/Stats.min.js"></script>
+		<script src="/webgl/Stats2.js"></script>
+
+		<script>
+
+		document.addEventListener("fullscreenchange", function() {
+
+			setFullScreenIcon();
+
+		});
+
+		document.addEventListener("webkitfullscreenchange", function() {
+
+		  setFullScreenIcon();
+
+		});
+
+		$(function(){
+			giveFocus('log_name'); loadHUD(null,null,null,null,'','');		});
+
+		</script>
+
+		<link href="/favicon.ico" rel="SHORTCUT ICON">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+		<link rel="stylesheet" type="text/css" href="/font-awesome/css/fontawesome.min.css">
+
+	</head>
+
+	<body style="text-align:center;" oncontextmenu="return false" id="body">
+
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-8464729-2']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+
+		<div id="master" onmousedown="unfocusChat();">
+
+			<div id="gameElements"></div>
+
+			<div id="canvas" onmouseover="unkTT();" ></div>
+
+			<div id="debug"></div>
+
+		</div>
+
+		<div id="mainOverlay">
+
+		<div class="home_screen" id="loading_screen">
+	<div class="home_screen_bg" id="home_screen_bg"></div>
+	<div class="home_screen_header" id="home_screen_header">
+		<form method='POST' id="login_form" onsubmit="HOME.validateLogin(); return false;">
+			<input type="hidden" name="task" value="login">
+			<div class="login_wrap">
+			
+				<div id="greg_top_btn" style="float:left;"></div><!--onmouseup="openFullscreen();" ontouchend="openFullscreen();"-->
+				
+				<div id="gphp_btn" class="home_screen_header_input google_signin" style="display:none;" onclick="location.href='/gtest2.php';"></div>
+
+				<div class="home_screen_header_label">Login Name:</div>
+				<div class="home_screen_header_input"><input type=text id="log_name" name="log_name" maxlength = "15" placeholder="Login Name"></div>
+				<div class="home_screen_header_label" style="width:65px;">Password:</div>
+				<div class="home_screen_header_input"><input type=password id="log_pass" name="log_pass" maxlength = "15" placeholder="Password"></div>
+				<div class="home_screen_header_input login_btn" style="width: 70px;"><input type=submit value="Login" class="submit"></div>
+
+				<div class="home_screen_header_input" style="width: 70px; margin-right:0px; margin-left:-5px;" id="blog_button"><a href="/3d-browser-mmorpg" target="_blank"><input type=button value="Blog" class="submit"></a></div>
+				<div class="home_screen_header_input" style="width: 70px; margin-right:0px; margin-left:-5px;" id="forum_button"><a href="/free-browser-mmo-forum.php" target="_blank"><input type=button value="Forum" class="submit" onclick="javascript:void(0);"></a></div>
+			</div>
+			
+				<div id="woptions_wrap_mobile" class="home">
+					<a onmouseover="kTT(event,'Toggle Fullscreen');" onmouseout="unkTT();" href="javascript:void(0)" onclick="toggleFullScreen();" class="ajlink" id="fullscreen_toggle_mobile"><img id="fullscreen_img" src="img/icons/fullscreen.png" alt="MMO Toggle FullScreen"></a>
+				</div>
+				<div style="display:inline-block;float:none;margin:0px 5px; padding-top:5px;">
+					<a href="https://twitter.com/titansoftime" rel="noopener" class="twitter-follow-button" style="margin-top:3px;" data-show-count="false" data-show-screen-name="false">Follow</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				</div>				
+			
+			<!--div id="woptions_wrap_mobile">
+				<a onmouseover="kTT(event,'Toggle Fullscreen');" onmouseout="unkTT();" href="javascript:void(0)" onclick="openFullscreen();" class="ajlink" id="fullscreen_toggle_mobile"><img src="img/icons/fullscreen.png"></a>
+			</div-->						
+		</form>
+	</div>
+	<div class="home_screen_footer">
+		<strong>&copy; 2014 - 2022 Firehurts Studios</strong>
+
+		<div class="mainmenu" style="left:0px;right:auto;">
+			<ul>
+				<li class="up">
+					<span>Friends</span>
+					<ul>						
+						<li><a href="http://mmobomb.com/" target="_blank" rel="noopener">MMOBomb.com</a></li>
+						<li><a href="http://gameflare.com/" target="_blank" rel="noopener">GameFlare.com</a></li>
+						<li><a href="http://mmorpg.com/" target="_blank" rel="noopener">MMORPG.com</a></li>						
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="home_screen_footer_mobile">
+		<strong>&copy; 2014 - 2022 Firehurts Studios</strong>
+	</div>
+	<div class="loading_wrap" id="loading_wrap">
+		<div class="loading_liner">
+			<div class="loading_bg"></div>
+			<div class="loading_bar_wrap"><div class="loading_bar" id="loading_bar"></div></div>
+			<div class="loading_msg" id="loading_msg">Building Geometry...</div>
+			<div class="loading_img"></div>
+		</div>
+	</div>
+	<div class="home_banner"></div>
+	<!--div class="beta_button_wrap"><img src="/img/beta_test.png" alt="Beta Test"></div-->
+	<!--div class="beta_button_wrap"><a href="https://www.kickstarter.com/projects/243878885/titansoftimecom" target="_blank" class="" style="cursor:pointer;"><img src="/logos/kickstarter-logo2.png" style="width:100px;height:100px;"></a></div-->
+	<div class="tagline_wrap"><h1>3D Browser MMORPG</h1></div>
+	<div id="register_button_wrap"><a href="javascript:void(0);" onclick="HOME.initRegister();" class="">Register</a></div>
+	<div class="about_wrap" id="about_wrap">
+		<div class="about_bg"></div>
+		<div class="about_info">
+			<p>Titans of Time is browser based 3D mmorpg. Free to play with upgrades available. No downloads required!</p>
+			<p>With over 30 zones and temples, over 400 quests and NPC's, thousands of items, talents, professions, fishing, and professions there is lots to accomplish.</p>
+			<p>Battle with friends or foes with PVP, test yourself in a Gauntlet, or get a group to battle in an arena, there is always a challenge awaiting!</p>
+			<p>Register and begin your journey towards be a Titan of Time!</p>
+			<p style="text-align:center;"><a href="javascript:HOME.hideAbout();">Close</a></p>
+		</div>
+	</div>
+	<div class="about_wrap" id="fixes_wrap" style="width:600px;margin-left:-300px;">
+		<div class="about_bg"></div>
+		<div class="about_info" style="font-size:16px;">
+			<p style="text-align:center;">If you are not using Google Chrome; use it. It makes the internet better...</p>
+			<p style="text-align:center;color:#ff0000;">Try these at your own risk!</p>
+			<p style="line-height:30px;"><strong style="font-size:18px;color:#ffffbe;">Chrome users:</strong>&nbsp;Open a new tab and enter "chrome:flags" into the url bar. Find the option "Override software rendering list" and enable it (make sure to click the relaunch button afterwards).</p>
+			<p style="line-height:30px;"><strong style="font-size:18px;color:#ffffbe;">Firefox users:</strong>&nbsp;Open a new tab and enter "about:config" into the url bar (no quotes) and hit enter. Search for webgl and set webgl.force-enable to true. webgl.prefer-native-gl may help as well.</p>
+			<p style="text-align:center;"><a href="javascript:HOME.hideFixes();">Close</a></p>
+		</div>
+	</div>
+	<div id="webglerror">
+		<p>Unfortunately your web browser does not support Webgl 3D.</p>
+		<p>Please download the latest version of one of the following browsers.</p>
+		<p>
+			<a href="https://www.google.com/intl/en/chrome/browser/" target="_blank" rel="noopener" onmouseover="kTT(event,'Google Chrome (Recommended)');" onmouseout="unkTT();"><img src="/img/icons/chrome.png" alt="Google Chrome"></a>
+			<a href="https://www.opera.com/download" target="_blank" rel="noopener" onmouseover="kTT(event,'Opera');" onmouseout="unkTT();"><img src="/img/icons/opera.png" alt="Opera"></a>
+			<a href="https://www.mozilla.org/en-US/firefox/new" target="_blank" rel="noopener" onmouseover="kTT(event,'Firefox');" onmouseout="unkTT();"><img src="/img/icons/firefox.png" alt="Firefox"></a>
+		</p>
+		<p>This can also be caused by old/misconfigured software/hardware.<br><a href="javascript:void(0);" onclick="HOME.showFixes();">Possible Fixes Guide</a></p>
+	</div>
+</div>
+		</div>
+
+		<div id="notifications"></div>
+		<div id="kTT"></div>
+		<div id="kCD"></div>
+		<div id="kHT" onmouseover="kTT(event,'Click to close.')" onmouseout="unkTT();" onclick="unkHT(); unkTT();"></div>
+		<div id="lb"></div>
+
+	</body>
+
+</html>
