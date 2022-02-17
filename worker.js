@@ -1,3 +1,6 @@
+import * as CANNON from "/mine/cannon.js-master/build/cannon.js"
+import "/node_modules/three/build/three.js";
+
 // Setup our world
 var world = new CANNON.World();
 world.gravity.set(0, 0, -9.82); // m/s²
@@ -33,3 +36,21 @@ var lastTime;
   console.log("Sphere z position: " + sphereBody.position.z);
   lastTime = time;
 })();
+
+
+/*
+// Create an entity
+const box = new Entity()
+
+// Create and add a `Transform` component to that entity
+box.addComponent(new Transform())
+
+// Set the fields in the component
+box.getComponent(Transform).position.set(3, 1, 3)
+
+// Create and apply a `BoxShape` component to give the entity a visible form
+box.addComponent(new BoxShape())
+
+// Add the entity to the engine
+engine.addEntity(box)
+*/
