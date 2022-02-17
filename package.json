@@ -23,6 +23,7 @@
     "cannon": "github:schteppe/cannon.js",
     "commonjs": "^0.0.1",
     "decentraland": "^3.9.0",
+    "decentraland-ecs": "^6.9.0",
     "express": "^4.17.2",
     "glsl": "^0.0.1",
     "htmleditor": "^0.0.0",
