@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/sirivus/studioonline/issues"
   },
-  "homepage": "https://github.com/sirivus/studioonline/readme",
+  "homepage": "https://github.com/sirivus/studioonline",
   "dependencies": {
     "@react-three/fiber": "^7.0.26",
     "babylon": "^6.18.0",
