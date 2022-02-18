@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.html",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/sirivus/studioonline/issues"
   },
-  "homepage": "https://github.com/sirivus/studioonline/blob/main/build/index.html",
+  "homepage": "https://github.com/sirivus/studioonline/#readme",
   "dependencies": {
     "@react-three/fiber": "^7.0.26",
     "babylon": "^6.18.0",
